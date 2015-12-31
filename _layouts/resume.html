@@ -4,7 +4,6 @@
   {% include head.html %}
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
-
     <div class="wrapper">
 
       <header class="page-header">
@@ -27,7 +26,9 @@
         </div>
 
         <div class="executive-summary">
-          <p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but K.I.S.S.</p>
+          <p>
+            French engineering student in Computer Science at INSA Toulouse with many years of experience as software engineer. In parallel of my studies, I am indeed a freelance mobile iOS and Web developer what allowed me to improve my personal organization, customer relationship and develop my technical skills to stay efficient with the latest development technologies.
+          </p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -39,6 +40,86 @@
 
       </header>
 
+      {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+        <div class="columns">
+
+          <div class="resume-item table-column">
+            <h4 class="resume-item-details">iOS</h4>
+            <ul class="resume-item-list">
+              <li>Swift</li>
+              <li>Objective-C</li>
+              <li>Cocoa Touch</li>
+              <li>Xcode</li>
+            </ul>
+          </div>
+
+          <div class="resume-item table-column">
+            <h4 class="resume-item-details">Web</h4>
+            <ul class="resume-item-list">
+              <li>PHP</li>
+              <li>
+                JavaScript
+                <ul class="resume-item-list">
+                  <li>jQuery / Ajax</li>
+                  <li>NodeJS / SailsJS</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="resume-item table-column">
+            <h4 class="resume-item-details">Others</h4>
+            <ul class="resume-item-list">
+              <li>Java</li>
+              <li>C&#35; (Framework .NET)</li>
+              <li>OCaml</li>
+              <li>Python</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="columns">
+
+          <div class="resume-item table-column">
+            <h4 class="resume-item-details">Tools</h4>
+            <ul class="resume-item-list">
+              <li>Parse.com</li>
+              <li>Xamarin</li>
+              <li>UML</li>
+              <li>Git / SVN</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+
+          <div class="resume-item table-column">
+            <h4 class="resume-item-details">Methodologies</h4>
+            <ul class="resume-item-list">
+              <li>Agile (Scrum)</li>
+              <li>yPBL</li>
+            </ul>
+          </div>
+          
+          <div class="resume-item table-column">
+            <h4 class="resume-item-details">Languages</h4>
+            <ul class="resume-item-list">
+              <li>French (Native)</li>
+              <li>English<br/>(Professional working proficiency)</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- end Skills -->
+      {% endif %}
+
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
       <section class="content-section">
@@ -47,56 +128,55 @@
           <h2>Experience</h2>
         </header>
 
-        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
         <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details">Safety Inspector &bull; Nov, 1980 &mdash; Present</h4>
-          <p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p>
+          <h3 class="resume-item-title">iOS Developer Intern</h3>
+          <h4 class="resume-item-details">Scoop.it,
+            <span class="resume-item-place">Toulouse (France)</span>
+            &bull; Jul, 2015 &mdash; Aug, 2015
+          </h4>
           <ul class="resume-item-list">
-            <li>Ate lots of donuts</li>
-            <li>Fell asleep rarely</li>
-            <li>Left promptly at end of day (sometimes earlier)</li>
+            <li>Developed an iOS app (used by more than 1500 users) providing all the website features in a native mobile environment.</li>
+            <li>Added a new feature allowing the user to consult his followed posts in a fantastic collection view in order to increase customer retention.</li>
           </ul>
-          <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p>
-
-        </div><!-- end of resume-item -->
-
-        <!-- another resume item -->
-        <div class="resume-item">
-          <h3 class="resume-item-title">Sir Putt-A-Lot's Merrie Olde Fun Centre</h3>
-          <h4 class="resume-item-details">Windmill Crank Operator &bull; Jun, 1978 &mdash; Sept, 1979</h4>
-          <p class="resume-item-copy">If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.</p>
-
-        </div><!-- end of resume-item -->
-
-        <!-- by now you're getting the picture... -->
-        <div class="resume-item">
-          <h3 class="resume-item-title">Simpson Lazer Tag</h3>
-          <h4 class="resume-item-details">Front Desk Attendant &bull; Jun, 1975 &mdash; May, 1978</h4>
-          <p class="resume-item-copy">Boy, when Marge first told me she was going to the Police Academy, I thought it would be fun and exciting, you know, like the movie... Spaceballs. But instead, it's been painful and disturbing, like the movie Police Academy.</p>
-
-        </div><!-- end of resume-item -->
-
-      </section>
-      <!-- end Experience -->
-      {% endif %}
-
-      {% if site.resume_section_education %}
-      <!-- begin Education -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Education</h2>
-        </header>
+        </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">Springfield College</h3>
-          <h4 class="resume-item-details">Associates Degree, Business Management &bull; 1984 &mdash; 1986</h4>
-          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here.</p>
+          <h3 class="resume-item-title">iOS Developer</h3>
+          <h4 class="resume-item-details">Driver4U,
+            <span class="resume-item-place">Toulouse (France)</span>
+            &bull; Mar, 2015 &mdash; Apr, 2015
+          </h4>
+          <ul class="resume-item-list">
+            <li>Developed an iOS app allowing users to call for a private taxi in Switzerland and pay directly within the app.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Web Developer</h3>
+          <h4 class="resume-item-details">Verticualidad,
+            <span class="resume-item-place">Toulouse (France)</span>
+            &bull; Jan, 2015
+          </h4>
+          <ul class="resume-item-list">
+            <li>Developed a website with Wordpress (www.verticualidad.fr) to expand a local mountain sports association.</li>
+            <li>Installation on a dedicated server (configuration of Apache, FTP server, PHP, MySQL, DNS).</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">iOS Developer</h3>
+          <h4 class="resume-item-details">Wimha,
+            <span class="resume-item-place">Toulouse (France)</span>
+            &bull; Jul, 2014 &mdash; Oct, 2014
+          </h4>
+          <ul class="resume-item-list">
+            <li>Developed an iOS app (used by more than 500 users) allowing the user to flash a QR Code on a little wooden totem and share the instant moment with his community.</li>
+            <li>Added Push notifications with Parse SDK in order to increase customer retention.</li>
+          </ul>
         </div>
 
       </section>
-      <!-- end Education -->
+      <!-- end Experience -->
       {% endif %}
 
       {% if site.resume_section_projects %}
@@ -108,74 +188,92 @@
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://donutlocator.io">donutfinder.io</a></h3>
-          <h4 class="resume-item-details">Founder & Primary Developer &bull; 2012 &mdash; Present</h4>
-          <p class="resume-item-copy">Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.</p>
+          <h3 class="resume-item-title">Indoor and Outdoor Location</h3>
+          <h4 class="resume-item-details">Cross-platform app in C&#35; &bull; Nov, 2015 &mdash; Present</h4>
+          <ul class="resume-item-list">
+            <li>Development of a mobile app (iOS, Android, Windows Phone) with Xamarin allowing more than 1000 participants of the IFAC 2017 World Congress to be guided through the city of Toulouse and inside buildings.</li>
+            <li>Integration of indoor navigation with Bluetooth Low Energy and Estimote iBeacons technologies.</li>
+            <li>Use of Parse.com to store data and build an efficient API.</li>
+            <li>Development of a web application with NodeJS, SailsJS and React.</li>
+          </ul>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Donut Eater's User Group</h3>
-          <h4 class="resume-item-details">Co-Founder & Organizer &bull; 2007 &mdash; Present</h4>
-          <p class="resume-item-copy">DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.</p>
+          <h3 class="resume-item-title">Peer-to-Peer Chat System</h3>
+          <h4 class="resume-item-details">Graphical Java multithreading cross-platform app &bull; Oct, 2015 &mdash; Nov, 2015</h4>
+          <ul class="resume-item-list">
+            <li>Developed an app allowing users to send messages and files to each other using peer-to-peer networking.</li>
+            <li>Implementation of major design patterns like MVC, Singleton, Facade, Observer</li>
+            <li>UML design methodology : creation of a Software Requirement Specification and a Software Design Document.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">D&#33;scover</h3>
+          <h4 class="resume-item-details">iOS mobile application written in Swift &bull; Aug, 2015</h4>
+          <ul class="resume-item-list">
+            <li>Developed a Tinder-like app to share Scoop.it posts in an original way in order to completely rethink the classical user experience by adding a feature allowing the user to swipe right the post to share it or swipe left to dismiss it.</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Humanitarian project</h3>
+          <h4 class="resume-item-details">Scouts et Guides de France,
+            <span class="resume-item-place">Rio de Janeiro (Brazil)</span>
+            &bull; Jul, 2013 &mdash; Aug, 2013
+          </h4>
+          <ul class="resume-item-list">
+            <li>Helped an association to take care of orphans from the favelas</li>
+            <li>Teached them English and Mathematics</li>
+          </ul>
         </div>
 
       </section>
       <!-- end Projects -->
       {% endif %}
 
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
+      {% if site.resume_section_education %}
+      <!-- begin Education -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Skills</h2>
+          <h2>Education</h2>
         </header>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Donut design</h4>
-          <p class="resume-item-copy">Sprinkle art, icing design, eclair management, taste testing, donut/coffee pairing research</p>
+          <h3 class="resume-item-title">INSA</h3>
+          <h4 class="resume-item-details">MSc in Computer Science,
+            <span class="resume-item-place">Toulouse, France</span>
+            &bull; 2013 &mdash; Present
+          </h4>
         </div>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Craft beer brewing</h4>
-          <p class="resume-item-copy">Hops inspection, brew testing, distribution management, bottle label design, festival and event management</p>
+          <h3 class="resume-item-title">University of Quebec at Trois-Rivieres</h3>
+          <h4 class="resume-item-details">Semester abroad &mdash; Computer Science,
+            <span class="resume-item-place">Quebec, Canada</span>
+            &bull; Aug, 2014 &mdash; Dec, 2014
+          </h4>
         </div>
 
         <div class="resume-item">
-          <h4 class="resume-item-details">Family leadership</h4>
-          <p class="resume-item-copy">Bread winning, conflict resolution, couch inspection, TV longevity testing</p>
+          <h3 class="resume-item-title">University of Toulouse</h3>
+          <h4 class="resume-item-details">BSc in Mathematics and Computer Science,
+            <span class="resume-item-place">Toulouse, France</span>
+            &bull; 2012 &mdash; 2013
+          </h4>
         </div>
 
       </section>
-      <!-- end Skills -->
-      {% endif %}
+      <!-- end Education -->
+      {% endif %}      
 
       {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
       <section class="content-section">
-
         <header class="section-header">
           <h2>Recognition</h2>
         </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details">Outstanding Achievement &bull; 2010</h4>
-          <p class="resume-item-copy">Awarded for stopping a nuclear meltdown, even though I also started it.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Duff Beer Customer of the year</h3>
-          <h4 class="resume-item-details">1997 &mdash; 2001, 2003, 2008 &mdash; 2012</h4>
-          <p class="resume-item-copy">Honored by <a href="https://en.wikipedia.org/wiki/Duff_Beer">Duff Beer</a> for being an outstanding customer several years straight. Qualifications included most beer consumed at a bar, most beer purchased, and most beer ralphed.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Moe's Patron of the Month</h3>
-          <h4 class="resume-item-details">12/2001, 8/2004</h4>
-          <p class="resume-item-copy">Specifically this prestigious awarded twice for stopping a robber with my belly.</p>
-        </div>
-
       </section>
       <!-- end Recognition -->
       {% endif %}
@@ -183,23 +281,9 @@
       {% if site.resume_section_associations %}
       <!-- begin Associations -->
       <section class="content-section">
-
         <header class="section-header">
           <h2>Associations</h2>
         </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://beerfortheworld.com">Beer for the World</a></h3>
-          <h4 class="resume-item-details">Volunteer &bull; 2008 &mdash; Present</h4>
-          <p class="resume-item-copy">Organized fund drives and participated in fundraising events for the benefit of families in third world countries without proper access to malt beverages.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">Springfield Nuclear Workers Labor Union</h3>
-          <h4 class="resume-item-details">Member in Good Standin &bull; 1994 &mdash; Present</h4>
-          <p class="resume-item-copy">Founding member of the local nuclear workers labor union.</p>
-        </div>
-
       </section>
       <!-- end Associations -->
       {% endif %}
@@ -207,25 +291,15 @@
       {% if site.resume_section_links %}
       <!-- begin Links -->
       <section class="content-section">
-
         <header class="section-header">
           <h2>Additional Links</h2>
         </header>
-
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            <li><a href="#">Springfield Poker Club</a></li>
-            <li><a href="#">Springfield Donut Eater's User Group</a></li>
-          </ul>
-        </div>
-
       </section>
       <!-- end Links -->
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
+        <p class="footer-line">Fork me on <a href="https://github.com/gautierdelorme/resume-template">GitHub</a>.</p>
       </footer>
 
     </div>

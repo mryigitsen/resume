@@ -72,3 +72,11 @@
   padding-left: $grid-gutter;
   vertical-align: top;
 }
+
+
+@media screen and (max-width: 479px) {
+    .table-column {
+        display: block;
+        width: 100%;
+    }
+}
