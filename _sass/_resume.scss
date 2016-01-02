@@ -241,6 +241,7 @@
 #lightbox-img {
   height: 90%;
   width: 100%;
+  @include vertical-align();
 }
 
 #lightbox img {
