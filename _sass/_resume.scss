@@ -128,6 +128,12 @@
 
   .resume-item { margin-bottom: 2rem; }
 
+  .resume-item-picture {
+    float: left;
+    height: 50px;
+    margin-right: 10px;
+  }
+
   .resume-item-title {
     @include sans_bold;
     margin: 0 0 .75rem;
@@ -140,6 +146,10 @@
     font-size: 1.125rem;
     margin: 0 0 .75rem;
     line-height: 1;
+
+    .fa {
+      margin-right: 10px;
+    }
   }
 
   .resume-item-title,
