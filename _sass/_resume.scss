@@ -140,6 +140,18 @@
     font-size: 1.5rem;
     letter-spacing: -.05rem;
     line-height: 1;
+
+    .fa {
+      margin-left: 5px;
+      font-size: 1.2rem;
+    }
+
+    a {
+      color: #333;
+      &:hover {
+        color: #3973B1;
+      }
+    }
   }
 
   .resume-item-details {
@@ -152,7 +164,6 @@
     }
   }
 
-  .resume-item-title,
   .resume-item-details,
   .resume-item-copy,
   .resume-item-list {
