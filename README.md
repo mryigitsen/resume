@@ -1,6 +1,8 @@
-# resume-template
+# [gautierdelorme.com](http://gautierdelorme.com/)
 
-*A simple Jekyll powered resume template based on Joel Glovier's work.*
+*A Jekyll + GitHub Pages powered resume based on Joel Glovier's work.*
+
+![img](images/screenshot.png)
 
 ## Docs
 
@@ -18,6 +20,11 @@ First you'll want to fork the repo to your own account. Then clone it locally an
 
 * Most of the basic customization will take place in the `/_config.yml` file.
 * Most of the content configuration will take place in the `/_layouts/resume.html` file. 
+
+### Publishing to GitHub Pages for free
+
+[GitHub Pages](https://pages.github.com/) will host this for free with your GitHub account.
+To setup your GH Pages site with a custom domain, [follow the instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) on the GitHub Help site for that topic.
 
 ## License
 
