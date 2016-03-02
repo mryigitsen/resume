@@ -29,6 +29,15 @@
     display: block;
   }
 
+  .avatar-mini {
+    width: 30px;
+    max-width: 100%;
+    @include border-radius(15px);
+    display: inline;
+    float: left;
+    margin-right: 5px;
+  }
+
   .header-name {
     @include sans;
     font-size: 3rem;
@@ -53,6 +62,20 @@
       text-align: center;
       margin: 0 0 .5rem;
 
+      @include media_larger_than_mobile {
+        float: left;
+        margin: 0;
+      }
+    }
+
+    .post-title {
+      @include sans;
+      font-weight: 300;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      letter-spacing: -.05rem;
+      text-align: center;
+      margin: 0 0 .5rem;
       @include media_larger_than_mobile {
         float: left;
         margin: 0;
@@ -129,6 +152,13 @@
   .resume-item { margin-bottom: 2rem; }
 
   .resume-item-picture {
+    float: left;
+    width: 50px;
+    margin-right: 10px;
+    @include border-radius(25px);
+  }
+
+  .resume-item-picture-square {
     float: left;
     width: 50px;
     margin-right: 10px;
@@ -266,4 +296,10 @@
   border: 1px solid #e3e3e3;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
 }

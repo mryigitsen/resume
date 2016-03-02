@@ -4,6 +4,10 @@ description: "Gautier Delorme Software Engineer, Mobile and Web Developer"
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 sass:
   sass_dir: _sass
   style: compressed
@@ -27,6 +31,8 @@ resume_section_experience:      true
 resume_section_education:       true
 resume_section_projects:        true
 resume_section_skills:          true
+resume_section_extracurricular: true
+resume_section_blog:            false
 resume_section_recognition:     false
 resume_section_links:           false
 resume_section_associations:    false
