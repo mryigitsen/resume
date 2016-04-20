@@ -146,6 +146,13 @@
 
 // resume content styles
 
+a {
+  color: #333;
+  &:hover {
+    color: #3973B1;
+  }
+}
+
 .content-section {
   margin: 0 0 3rem;
 
@@ -174,13 +181,6 @@
     .fa {
       margin-left: 5px;
       font-size: 1.2rem;
-    }
-
-    a {
-      color: #333;
-      &:hover {
-        color: #3973B1;
-      }
     }
   }
 
