@@ -392,7 +392,7 @@ The routing is the way of making a link between some path and app's views. In an
 
 ## Routing by components
 
-Routing by components is really simple in Angular. You just have to add the `**$routeConfig**` property in a component and explicit all routes.
+Routing by components is really simple in Angular. You just have to add the **$routeConfig** property in a component and explicit all routes.
 
 A route is characterized by a path, a name and a component. A typical route declaration looks like that:
 
