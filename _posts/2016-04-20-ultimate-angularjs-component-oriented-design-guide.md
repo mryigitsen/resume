@@ -10,7 +10,7 @@ cover: /images/blog/2016-04-20-ultimate-angularjs-component-oriented-design-guid
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Table of content](#table-of-content)
-- [Project architecture](#project-architecture)
+- [Project Overview](#project-overview)
 	- [General](#general)
 	- [App architecture](#app-architecture)
 	- [Global app files](#global-app-files)
@@ -38,7 +38,7 @@ cover: /images/blog/2016-04-20-ultimate-angularjs-component-oriented-design-guid
 
 <!-- /TOC -->
 
-# Project architecture
+# Project Overview
 
 ## General
 
