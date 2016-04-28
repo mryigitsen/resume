@@ -350,7 +350,7 @@ function SimpleService() {
     SimpleService.someProperty = "Hey you!"
 
     SimpleService.someMethod = function() {
-      console.log("I'm a method of SimpleService and my single property is "+vm.someProperty)
+      console.log("I'm a method of SimpleService and my single property is "+SimpleService.someProperty)
     }
 
     // other properties and methods...
