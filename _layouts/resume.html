@@ -3,416 +3,477 @@ layout: default
 ---
 <div class="wrapper">
 
-  <header class="page-header">
+    <header class="page-header">
 
-    {% if site.resume_avatar == 'true' %}
-    <img src="images/avatar.jpg" alt="my photo" class="avatar">
-    {% endif %}
+        {% if site.resume_avatar == 'true' %}
+        <img src="images/avatar.jpg" alt="my photo" class="avatar">
+        {% endif %}
 
-    <h1 class="header-name">{{ site.resume_name }}</h1>
+        <h1 class="header-name">{{ site.resume_name }}</h1>
 
-    <div class="title-bar">
+        <div class="title-bar">
 
-      <h2 class="header-title">{{ site.resume_title }}</h2>
+            <h2 class="header-title">{{ site.resume_title }}</h2>
 
-      {% include icon-links.html %}
-    </div>
+            {% include icon-links.html %}
+        </div>
 
-    <div class="executive-summary">
-      <p>
-        French engineering student in Computer Science at INSA Toulouse with many years of experience as software engineer. In parallel of my studies, I am indeed a freelance mobile iOS and Web developer what allowed me to improve my personal organization, customer relationship and develop my technical skills to stay efficient with the latest development technologies.
-      </p>
-    </div>
+        <div class="executive-summary">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo
+                reprehenderit optio amet ab temporibus asperiores quasi cupiditate.
+                Voluptatum ducimus voluptates voluptas?
+            </p>
+        </div>
 
-    {% if site.resume_looking_for_work == 'yes' %}
-    <a href="mailto:{{ site.resume_contact_email }}" class="contact-button">Contact me</a>
-    {% elsif site.resume_looking_for_work == 'no' %}
-    <a class="contact-button not-looking">I'm not looking for work right now.</a>
-    {% else %}
-    {% endif %}
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button">Contact me</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking">I'm not looking for work right now.</a>
+        {% else %}
+        {% endif %}
 
-  </header>
-
-  {% if site.resume_section_skills %}
-  <!-- begin Skills -->
-  <section class="content-section">
-
-    <header class="section-header">
-      <h2>Skills</h2>
     </header>
-    <div class="columns">
 
-      <div class="resume-item table-column">
-        <h4 class="resume-item-details"><i class="fa fa-mobile"></i>iOS</h4>
-        <ul class="resume-item-list">
-          <li>Swift</li>
-          <li>Objective-C</li>
-          <li>Cocoa Touch</li>
-          <li>Xcode</li>
-        </ul>
-      </div>
+    {% if site.resume_section_skills %}
+    <!-- begin Skills -->
+    <section class="content-section">
 
-      <div class="resume-item table-column">
-        <h4 class="resume-item-details"><i class="fa fa-html5"></i>Web</h4>
-        <ul class="resume-item-list">
-          <li>PHP</li>
-          <li>
-            JavaScript
+        <header class="section-header">
+            <h2>Skills</h2>
+        </header>
+        <div class="columns">
+            <div class="resume-item table-column">
+                <h4 class="resume-item-details"><i class="fa"></i>FrontEnd</h4>
+                <ul class="resume-item-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>
+                        JavaScript
+                        <ul class="resume-item-list">
+                            <li>ExtJS</li>
+                            <li>JQuery</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="resume-item table-column">
+                <h4 class="resume-item-details"><i class="fa"></i>BackEnd</h4>
+                <ul class="resume-item-list">
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Spring FrameWork</li>
+                    <li>Django FrameWork</li>
+                    <li>Django REST FrameWork</li>
+                    <li>nginX</li>
+                    <li>AWS</li>
+                </ul>
+            </div>
+
+            <div class="resume-item table-column">
+                <h4 class="resume-item-details"><i class="fa"></i>Database</h4>
+                <ul class="resume-item-list">
+                    <li>PostgreSQL</li>
+                    <li>MS-SQL</li>
+                </ul>
+            </div>
+
+            <div class="resume-item table-column">
+                <h4 class="resume-item-details"><i class="fa"></i>Others</h4>
+                <ul class="resume-item-list">
+                    <li>Ubuntu</li>
+                    <li>Git/Gityhub</li>
+                    <li>SVN</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- end Skills -->
+    {% endif %}
+
+    {% if site.resume_section_experience %}
+    <!-- begin Experience -->
+    <section class="content-section">
+
+        <header class="section-header">
+            <h2>Experiences</h2>
+        </header>
+
+        <div class="resume-item">
+            <h3 class="resume-item-title">HOOMI
+                <a href="https://github.com/fastcampus-HOOMI/Web-HOOMI"><i class="fa fa-github"></i></a>
+            </h3>
+            <h4 class="resume-item-details">패스트캠퍼스,
+                &bull; 2016.06 &mdash; 2016.07
+            </h4>
             <ul class="resume-item-list">
-              <li>jQuery / Ajax</li>
-              <li>NodeJS / SailsJS</li>
+                <li>
+                    참여인원: 5명
+                    <ul class="resume-item-list">
+                        <li>Server: 2명</li>
+                        <li>IOS: 3명</li>
+                    </ul>
+                </li>
+                <li>
+                    목적: 미디어를 활용한 센스있는 포트폴리오 만들기 HOOMI(Who am I)
+                    모바일과 웹으로 이력을 스마트하게 관리하세요
+                </li>
+                <li>
+                    사용된 기술: Python, Django, Django-REST-FrameWork, DjangoRESTFramwwork-JWT, gunicorn, nginX, AWS(S3, CloudFront, Route53)
+                </li>
+                <li>담당업무: API 구현 및 AWS Infra 구축</li>
             </ul>
-          </li>
+            <!--<div class="columns well">-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/1.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/scoopit/1.png"-->
+                             <!--data-large-src="images/portfolio/scoopit/1.png" alt="scoopit1"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/2.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/scoopit/2.png"-->
+                             <!--data-large-src="images/portfolio/scoopit/2.png" alt="scoopit2"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/3.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/scoopit/3.png"-->
+                             <!--data-large-src="images/portfolio/scoopit/3.png" alt="scoopit3"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/4.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/scoopit/4.png"-->
+                             <!--data-large-src="images/portfolio/scoopit/4.png" alt="scoopit4"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+
+        <div class="resume-item">
+            <h3 class="resume-item-title">물류정보시스템(Omega)</h3>
+            <h4 class="resume-item-details">삼정 KPMG,
+                &bull; 2015.07 &mdash; 2016.01
+            </h4>
+            <ul class="resume-item-list">
+                <li> 참여인원: 8명 </li>
+                <li>목적: Web 환경에서의 물류 포워딩 시스템 개발로 기존에 출시돼있는 프로그램들보다 사용자 편의성 증가 설치 불필요</li>
+                <li>사용된 기술: Java, Jquery, Spring, MyBatis, ExtJS, SQL, JDBC</li>
+                <li>개발환경: Java 1.8, Spring 4.1, ExtJS 5.1, Tomcat 8, AWS(Amazon Web Service), RDS(MS-SQL 2012 Web Version)</li>
+                <li>담당업무: PDF Print Module 개발 및 기술 지원</li>
+                <ul class="resume-item-list">
+                    <li> Spring Security BcryptPasswordEncoder(bcrypt알고리즘) 사용하여 개인정보 보호</li>
+                    <li> ExtJS Grid Plugin Open Source Filterbar(https://github.com/loiane/Ext.ux.grid.FilterBar.git)</li>
+                    <li> Jasper Report library 사용 PDF Generate Java Module 개발</li>
+                </ul>
+            </ul>
+            <!--<div class="columns well">-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/1.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/scoopit/1.png"-->
+                             <!--data-large-src="images/portfolio/scoopit/1.png" alt="scoopit1"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/2.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/scoopit/2.png"-->
+                             <!--data-large-src="images/portfolio/scoopit/2.png" alt="scoopit2"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/3.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/scoopit/3.png"-->
+                             <!--data-large-src="images/portfolio/scoopit/3.png" alt="scoopit3"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/4.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/scoopit/4.png"-->
+                             <!--data-large-src="images/portfolio/scoopit/4.png" alt="scoopit4"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+
+        <!--<div class="resume-item">-->
+            <!--<img src="images/default_logo.png" class="resume-item-picture" alt="default_logo"/>-->
+            <!--<h3 class="resume-item-title">iOS Developer</h3>-->
+            <!--<h4 class="resume-item-details">Driver4U,-->
+                <!--<span class="resume-item-place">Toulouse (France)</span>-->
+                <!--&bull; Mar, 2015 &mdash; Apr, 2015-->
+            <!--</h4>-->
+            <!--<ul class="resume-item-list">-->
+                <!--<li>Developed an iOS app allowing users to call for a private taxi in Switzerland and pay directly-->
+                    <!--within the app.-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+        <!--<div class="resume-item">-->
+            <!--<img src="images/verticualidad_logo.png" class="resume-item-picture" alt="verticualidad_logo"/>-->
+            <!--<h3 class="resume-item-title">Web Developer</h3>-->
+            <!--<h4 class="resume-item-details">Verticualidad,-->
+                <!--<span class="resume-item-place">Toulouse (France)</span>-->
+                <!--&bull; Jan, 2015-->
+            <!--</h4>-->
+            <!--<ul class="resume-item-list">-->
+                <!--<li>Developed a website with Wordpress to expand a local mountain sports association.</li>-->
+                <!--<li>Installation on a dedicated server (configuration of Apache, FTP server, PHP, MySQL, DNS).</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+        <!--<div class="resume-item">-->
+            <!--<img src="images/wimha_logo.png" class="resume-item-picture" alt="wimha_logo"/>-->
+            <!--<h3 class="resume-item-title">iOS Developer <a-->
+                    <!--href="https://itunes.apple.com/sb/app/wimha/id873048515?mt=8"><i class="fa fa-apple"></i></a></h3>-->
+            <!--<h4 class="resume-item-details">Wimha,-->
+                <!--<span class="resume-item-place">Toulouse (France)</span>-->
+                <!--&bull; Jul, 2014 &mdash; Oct, 2014-->
+            <!--</h4>-->
+            <!--<ul class="resume-item-list">-->
+                <!--<li>Developed an iOS app (used by more than 500 users) allowing the user to flash a QR Code on a little-->
+                    <!--wooden totem and share the instant moment with his community.-->
+                <!--</li>-->
+                <!--<li>Added Push notifications with Parse SDK in order to increase customer retention.</li>-->
+            <!--</ul>-->
+            <!--<div class="columns well">-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/1.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/wimha/1.png"-->
+                             <!--data-large-src="images/portfolio/wimha/1.png" alt="wimha1"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/2.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/wimha/2.png"-->
+                             <!--data-large-src="images/portfolio/wimha/2.png" alt="wimha2"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/3.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/wimha/3.png"-->
+                             <!--data-large-src="images/portfolio/wimha/3.png" alt="wimha3"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--<div class="table-column">-->
+                    <!--<a href="images/portfolio/scoopit/4.png">-->
+                        <!--<img class="img-thumbnail" src="images/portfolio/wimha/4.png"-->
+                             <!--data-large-src="images/portfolio/wimha/4.png" alt="wimha3"/>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </section>
+    <!-- end Experience -->
+    {% endif %}
+
+    {% if site.resume_section_projects %}
+    <!-- begin Projects -->
+    <section class="content-section">
+
+        <header class="section-header">
+            <h2>Projects</h2>
+        </header>
+
+        <div class="resume-item">
+            <h3 class="resume-item-title">Indoor and Outdoor Location <a
+                    href="https://github.com/gautierdelorme/JPOINSAXamarin"><i class="fa fa-github"></i></a></h3>
+            <h4 class="resume-item-details">Cross-platform app in C&#35; &bull; Nov, 2015 &mdash; Present</h4>
+            <ul class="resume-item-list">
+                <li>Development of a mobile app (iOS, Android, Windows Phone) with Xamarin allowing more than 1000
+                    participants of the IFAC 2017 World Congress to be guided through the city of Toulouse and inside
+                    buildings.
+                </li>
+                <li>Integration of indoor navigation with Bluetooth Low Energy and Estimote iBeacons technologies.</li>
+                <li>Use of Parse.com to store data and build an efficient API.</li>
+                <li>Development of a web application with NodeJS, SailsJS and React.</li>
+            </ul>
+        </div>
+
+        <div class="resume-item">
+            <h3 class="resume-item-title">Peer-to-Peer Chat System <a
+                    href="https://github.com/gautierdelorme/Semafor"><i class="fa fa-github"></i></a></h3>
+            <h4 class="resume-item-details">Graphical Java multithreading cross-platform app &bull; Oct, 2015 &mdash;
+                Nov, 2015</h4>
+            <ul class="resume-item-list">
+                <li>Developed an app allowing users to send messages and files to each other using peer-to-peer
+                    networking.
+                </li>
+                <li>Implementation of major design patterns like MVC, Singleton, Facade, Observer</li>
+                <li>UML design methodology : creation of a Software Requirement Specification and a Software Design
+                    Document.
+                </li>
+            </ul>
+        </div>
+
+        <div class="resume-item">
+            <h3 class="resume-item-title">D&#33;scover</h3>
+            <h4 class="resume-item-details">iOS mobile application written in Swift &bull; Aug, 2015</h4>
+            <ul class="resume-item-list">
+                <li>Developed a Tinder-like app to share Scoop.it posts in an original way in order to completely
+                    rethink the classical user experience by adding a feature allowing the user to swipe right the post
+                    to share it or swipe left to dismiss it.
+                </li>
+            </ul>
+            <div class="columns well">
+                <div class="table-column">
+                    <a href="images/portfolio/scoopit/1.png">
+                        <img class="img-thumbnail" src="images/portfolio/discover/1.png"
+                             data-large-src="images/portfolio/discover/1.png" alt="discover1"/>
+                    </a>
+                </div>
+                <div class="table-column">
+                    <a href="images/portfolio/scoopit/2.png">
+                        <img class="img-thumbnail" src="images/portfolio/discover/2.png"
+                             data-large-src="images/portfolio/discover/2.png" alt="discover2"/>
+                    </a>
+                </div>
+                <div class="table-column">
+                    <a href="images/portfolio/scoopit/3.png">
+                        <img class="img-thumbnail" src="images/portfolio/discover/3.png"
+                             data-large-src="images/portfolio/discover/3.png" alt="discover3"/>
+                    </a>
+                </div>
+                <div class="table-column">
+                    <a href="images/portfolio/scoopit/4.png">
+                        <img class="img-thumbnail" src="images/portfolio/discover/4.png"
+                             data-large-src="images/portfolio/discover/4.png" alt="discover4"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end Projects -->
+    {% endif %}
+
+    {% if site.resume_section_education %}
+    <!-- begin Education -->
+    <section class="content-section">
+
+        <header class="section-header">
+            <h2>Education</h2>
+        </header>
+
+        <div class="resume-item">
+            <img src="images/hallym.png" class="resume-item-picture-square" alt="university_logo"/>
+            <h3 class="resume-item-title">한림대학교</h3>
+            <h4 class="resume-item-details">컴퓨터공학
+                &bull; 2008 &mdash; 2014
+            </h4>
+        </div>
+
+        <div class="resume-item">
+            <img src="images/gigong.jpeg" class="resume-item-picture-square" alt="uqtr"/>
+            <h3 class="resume-item-title">춘천기계공업고등학교</h3>
+            <h4 class="resume-item-details">전산응용기계과
+                &bull; 2005 &mdash; 2008
+            </h4>
+        </div>
+
+    </section>
+    <!-- end Education -->
+    {% endif %}
+
+    {% if site.resume_section_extracurricular %}
+    <!-- begin Extracurricular -->
+    <section class="content-section">
+        <header class="section-header">
+            <h2>Extracurricular</h2>
+        </header>
+
+        <div class="resume-item">
+            <h3 class="resume-item-title">Humanitarian project</h3>
+            <h4 class="resume-item-details">Scouts et Guides de France,
+                <span class="resume-item-place">Rio de Janeiro (Brazil)</span>
+                &bull; Jul, 2013 &mdash; Aug, 2013
+            </h4>
+            <ul class="resume-item-list">
+                <li>Helped an association to take care of orphans from the favelas</li>
+                <li>Teached them English and Mathematics</li>
+            </ul>
+        </div>
+
+        <div class="resume-item">
+            <h3 class="resume-item-title">Climbing instructor</h3>
+            <h4 class="resume-item-details">Cote Sports Association,
+                <span class="resume-item-place">Toulouse (France)</span>
+                &bull; Jul, 2012 &mdash; Aug, 2012
+            </h4>
+            <ul class="resume-item-list">
+                <li>Introduced to youth the basics of rock climbing and how do it properly and safely.</li>
+                <li>The purpose was to share my love about mountain sports to a youngest generation in order to show
+                    them a different sport from what they could already know.
+                </li>
+            </ul>
+        </div>
+
+        <ul>
+
         </ul>
-      </div>
 
-      <div class="resume-item table-column">
-        <h4 class="resume-item-details"><i class="fa fa-code"></i>Others</h4>
-        <ul class="resume-item-list">
-          <li>Java</li>
-          <li>C&#35; (Framework .NET)</li>
-          <li>OCaml</li>
-          <li>Python</li>
-        </ul>
-      </div>
+    </section>
+    <!-- end Extracurricular -->
+    {% endif %}
 
-    </div>
-
-    <div class="columns">
-
-      <div class="resume-item table-column">
-        <h4 class="resume-item-details"><i class="fa fa-wrench"></i>Tools</h4>
-        <ul class="resume-item-list">
-          <li>Parse.com</li>
-          <li>Xamarin</li>
-          <li>UML</li>
-          <li>Git / SVN</li>
-          <li>MySQL</li>
-        </ul>
-      </div>
-
-      <div class="resume-item table-column">
-        <h4 class="resume-item-details"><i class="fa fa-mortar-board"></i>Methodologies</h4>
-        <ul class="resume-item-list">
-          <li>Agile (Scrum)</li>
-          <li>yPBL</li>
-        </ul>
-      </div>
-
-      <div class="resume-item table-column">
-        <h4 class="resume-item-details"><i class="fa fa-globe"></i>Languages</h4>
-        <ul class="resume-item-list">
-          <li>French (Native)</li>
-          <li>English<br/>(Professional working proficiency)</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </section>
-  <!-- end Skills -->
-  {% endif %}
-
-  {% if site.resume_section_experience %}
-  <!-- begin Experience -->
-  <section class="content-section">
-
-    <header class="section-header">
-      <h2>Professional experiences</h2>
-    </header>
-
-    <div class="resume-item">
-      <img src= "images/scoopit_logo.png" class="resume-item-picture" alt="scoopit_logo" />
-      <h3 class="resume-item-title">iOS Developer Intern</h3>
-      <h4 class="resume-item-details">Scoop.it,
-        <span class="resume-item-place">Toulouse (France)</span>
-        &bull; Jul, 2015 &mdash; Aug, 2015
-      </h4>
-      <ul class="resume-item-list">
-        <li>Developed an iOS app (used by more than 1500 users) providing all the website features in a native mobile environment.</li>
-        <li>Added a new feature allowing the user to consult his followed posts in a fantastic collection view in order to increase customer retention.</li>
-      </ul>
-      <div class="columns well">
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/1.png">
-            <img class="img-thumbnail" src="images/portfolio/scoopit/1.png" data-large-src="images/portfolio/scoopit/1.png" alt="scoopit1" />
-          </a>
+    {% if site.resume_section_blog %}
+    <!-- begin Blog -->
+    <section class="content-section">
+        <header class="section-header">
+            <h2>Latest articles</h2>
+        </header>
+        {% for post in site.posts limit: 5 %}
+        <div class="resume-item">
+            <img src="{{post.cover}}" class="resume-item-picture" alt="{{post.title}}"/>
+            <h3 class="resume-item-title"><a href="{{post.url}}">{{post.title}}</a></h3>
+            <h4 class="resume-item-details">
+                <span class="resume-item-place">on {{post.date | date: "%B %d, %Y"}}</span>
+            </h4>
         </div>
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/2.png">
-            <img class="img-thumbnail" src="images/portfolio/scoopit/2.png" data-large-src="images/portfolio/scoopit/2.png" alt="scoopit2" />
-          </a>
-        </div>
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/3.png">
-            <img class="img-thumbnail" src="images/portfolio/scoopit/3.png" data-large-src="images/portfolio/scoopit/3.png" alt="scoopit3" />
-          </a>
-        </div>
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/4.png">
-            <img class="img-thumbnail" src="images/portfolio/scoopit/4.png" data-large-src="images/portfolio/scoopit/4.png" alt="scoopit4" />
-          </a>
-        </div>
-      </div>
-    </div>
+        {% endfor %}
+    </section>
+    <!-- end Blog -->
+    {% endif %}
 
-    <div class="resume-item">
-      <img src= "images/default_logo.png" class="resume-item-picture" alt="default_logo" />
-      <h3 class="resume-item-title">iOS Developer</h3>
-      <h4 class="resume-item-details">Driver4U,
-        <span class="resume-item-place">Toulouse (France)</span>
-        &bull; Mar, 2015 &mdash; Apr, 2015
-      </h4>
-      <ul class="resume-item-list">
-        <li>Developed an iOS app allowing users to call for a private taxi in Switzerland and pay directly within the app.</li>
-      </ul>
-    </div>
+    {% if site.resume_section_recognition %}
+    <!-- begin Recognition -->
+    <section class="content-section">
+        <header class="section-header">
+            <h2>Recognition</h2>
+        </header>
+    </section>
+    <!-- end Recognition -->
+    {% endif %}
 
-    <div class="resume-item">
-      <img src= "images/verticualidad_logo.png" class="resume-item-picture" alt="verticualidad_logo" />
-      <h3 class="resume-item-title">Web Developer</h3>
-      <h4 class="resume-item-details">Verticualidad,
-        <span class="resume-item-place">Toulouse (France)</span>
-        &bull; Jan, 2015
-      </h4>
-      <ul class="resume-item-list">
-        <li>Developed a website with Wordpress to expand a local mountain sports association.</li>
-        <li>Installation on a dedicated server (configuration of Apache, FTP server, PHP, MySQL, DNS).</li>
-      </ul>
-    </div>
+    {% if site.resume_section_associations %}
+    <!-- begin Associations -->
+    <section class="content-section">
+        <header class="section-header">
+            <h2>Associations</h2>
+        </header>
+    </section>
+    <!-- end Associations -->
+    {% endif %}
 
-    <div class="resume-item">
-      <img src= "images/wimha_logo.png" class="resume-item-picture" alt="wimha_logo" />
-      <h3 class="resume-item-title">iOS Developer <a href="https://itunes.apple.com/sb/app/wimha/id873048515?mt=8"><i class="fa fa-apple"></i></a></h3>
-      <h4 class="resume-item-details">Wimha,
-        <span class="resume-item-place">Toulouse (France)</span>
-        &bull; Jul, 2014 &mdash; Oct, 2014
-      </h4>
-      <ul class="resume-item-list">
-        <li>Developed an iOS app (used by more than 500 users) allowing the user to flash a QR Code on a little wooden totem and share the instant moment with his community.</li>
-        <li>Added Push notifications with Parse SDK in order to increase customer retention.</li>
-      </ul>
-      <div class="columns well">
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/1.png">
-            <img class="img-thumbnail" src="images/portfolio/wimha/1.png" data-large-src="images/portfolio/wimha/1.png" alt="wimha1" />
-          </a>
-        </div>
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/2.png">
-            <img class="img-thumbnail" src="images/portfolio/wimha/2.png" data-large-src="images/portfolio/wimha/2.png" alt="wimha2" />
-          </a>
-        </div>
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/3.png">
-            <img class="img-thumbnail" src="images/portfolio/wimha/3.png" data-large-src="images/portfolio/wimha/3.png" alt="wimha3" />
-          </a>
-        </div>
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/4.png">
-            <img class="img-thumbnail" src="images/portfolio/wimha/4.png" data-large-src="images/portfolio/wimha/4.png" alt="wimha3" />
-          </a>
-        </div>
-      </div>
-    </div>
+    {% if site.resume_section_links %}
+    <!-- begin Links -->
+    <section class="content-section">
+        <header class="section-header">
+            <h2>Additional Links</h2>
+        </header>
+    </section>
+    <!-- end Links -->
+    {% endif %}
 
-  </section>
-  <!-- end Experience -->
-  {% endif %}
-
-  {% if site.resume_section_projects %}
-  <!-- begin Projects -->
-  <section class="content-section">
-
-    <header class="section-header">
-      <h2>Projects</h2>
-    </header>
-
-    <div class="resume-item">
-      <h3 class="resume-item-title">Indoor and Outdoor Location <a href="https://github.com/gautierdelorme/JPOINSAXamarin"><i class="fa fa-github"></i></a></h3>
-      <h4 class="resume-item-details">Cross-platform app in C&#35; &bull; Nov, 2015 &mdash; Present</h4>
-      <ul class="resume-item-list">
-        <li>Development of a mobile app (iOS, Android, Windows Phone) with Xamarin allowing more than 1000 participants of the IFAC 2017 World Congress to be guided through the city of Toulouse and inside buildings.</li>
-        <li>Integration of indoor navigation with Bluetooth Low Energy and Estimote iBeacons technologies.</li>
-        <li>Use of Parse.com to store data and build an efficient API.</li>
-        <li>Development of a web application with NodeJS, SailsJS and React.</li>
-      </ul>
-    </div>
-
-    <div class="resume-item">
-      <h3 class="resume-item-title">Peer-to-Peer Chat System <a href="https://github.com/gautierdelorme/Semafor"><i class="fa fa-github"></i></a></h3>
-      <h4 class="resume-item-details">Graphical Java multithreading cross-platform app &bull; Oct, 2015 &mdash; Nov, 2015</h4>
-      <ul class="resume-item-list">
-        <li>Developed an app allowing users to send messages and files to each other using peer-to-peer networking.</li>
-        <li>Implementation of major design patterns like MVC, Singleton, Facade, Observer</li>
-        <li>UML design methodology : creation of a Software Requirement Specification and a Software Design Document.</li>
-      </ul>
-    </div>
-
-    <div class="resume-item">
-      <h3 class="resume-item-title">D&#33;scover</h3>
-      <h4 class="resume-item-details">iOS mobile application written in Swift &bull; Aug, 2015</h4>
-      <ul class="resume-item-list">
-        <li>Developed a Tinder-like app to share Scoop.it posts in an original way in order to completely rethink the classical user experience by adding a feature allowing the user to swipe right the post to share it or swipe left to dismiss it.</li>
-      </ul>
-      <div class="columns well">
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/1.png">
-            <img class="img-thumbnail" src="images/portfolio/discover/1.png" data-large-src="images/portfolio/discover/1.png" alt="discover1" />
-          </a>
-        </div>
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/2.png">
-            <img class="img-thumbnail" src="images/portfolio/discover/2.png" data-large-src="images/portfolio/discover/2.png" alt="discover2" />
-          </a>
-        </div>
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/3.png">
-            <img class="img-thumbnail" src="images/portfolio/discover/3.png" data-large-src="images/portfolio/discover/3.png" alt="discover3" />
-          </a>
-        </div>
-        <div class="table-column">
-          <a href="images/portfolio/scoopit/4.png">
-            <img class="img-thumbnail" src="images/portfolio/discover/4.png" data-large-src="images/portfolio/discover/4.png" alt="discover4" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- end Projects -->
-  {% endif %}
-
-  {% if site.resume_section_education %}
-  <!-- begin Education -->
-  <section class="content-section">
-
-    <header class="section-header">
-      <h2>Education</h2>
-    </header>
-
-    <div class="resume-item">
-      <img src= "images/insa_logo.png" class="resume-item-picture-square" alt="insa_logo" />
-      <h3 class="resume-item-title">INSA</h3>
-      <h4 class="resume-item-details">MSc in Computer Science,
-        <span class="resume-item-place">Toulouse, France</span>
-        &bull; 2013 &mdash; Present
-      </h4>
-    </div>
-
-    <div class="resume-item">
-      <img src= "images/uqtr_logo.png" class="resume-item-picture-square" alt="uqtr" />
-      <h3 class="resume-item-title">University of Quebec at Trois-Rivieres</h3>
-      <h4 class="resume-item-details">Semester abroad &mdash; Computer Science,
-        <span class="resume-item-place">Quebec, Canada</span>
-        &bull; Aug, 2014 &mdash; Dec, 2014
-      </h4>
-    </div>
-
-    <div class="resume-item">
-      <img src= "images/univ_ps_logo.png" class="resume-item-picture-square" alt="ups_logo" />
-      <h3 class="resume-item-title">Paul Sabatier University</h3>
-      <h4 class="resume-item-details">BSc in Mathematics and Computer Science,
-        <span class="resume-item-place">Toulouse, France</span>
-        &bull; 2012 &mdash; 2013
-      </h4>
-    </div>
-
-  </section>
-  <!-- end Education -->
-  {% endif %}
-
-  {% if site.resume_section_extracurricular %}
-  <!-- begin Extracurricular -->
-  <section class="content-section">
-    <header class="section-header">
-      <h2>Extracurricular</h2>
-    </header>
-
-    <div class="resume-item">
-      <h3 class="resume-item-title">Humanitarian project</h3>
-      <h4 class="resume-item-details">Scouts et Guides de France,
-        <span class="resume-item-place">Rio de Janeiro (Brazil)</span>
-        &bull; Jul, 2013 &mdash; Aug, 2013
-      </h4>
-      <ul class="resume-item-list">
-        <li>Helped an association to take care of orphans from the favelas</li>
-        <li>Teached them English and Mathematics</li>
-      </ul>
-    </div>
-
-    <div class="resume-item">
-      <h3 class="resume-item-title">Climbing instructor</h3>
-      <h4 class="resume-item-details">Cote Sports Association,
-        <span class="resume-item-place">Toulouse (France)</span>
-        &bull; Jul, 2012 &mdash; Aug, 2012
-      </h4>
-      <ul class="resume-item-list">
-        <li>Introduced to youth the basics of rock climbing and how do it properly and safely.</li>
-        <li>The purpose was to share my love about mountain sports to a youngest generation in order to show them a different sport from what they could already know.</li>
-      </ul>
-    </div>
-
-    <ul>
-
-    </ul>
-
-  </section>
-  <!-- end Extracurricular -->
-  {% endif %}
-
-  {% if site.resume_section_blog %}
-  <!-- begin Blog -->
-  <section class="content-section">
-    <header class="section-header">
-      <h2>Latest articles</h2>
-    </header>
-    {% for post in site.posts limit: 5 %}
-      <div class="resume-item">
-        <img src= "{{post.cover}}" class="resume-item-picture" alt="{{post.title}}" />
-        <h3 class="resume-item-title"><a href="{{post.url}}">{{post.title}}</a></h3>
-        <h4 class="resume-item-details">
-          <span class="resume-item-place">on {{post.date | date: "%B %d, %Y"}}</span>
-        </h4>
-      </div>
-    {% endfor %}
-  </section>
-  <!-- end Blog -->
-  {% endif %}
-
-  {% if site.resume_section_recognition %}
-  <!-- begin Recognition -->
-  <section class="content-section">
-    <header class="section-header">
-      <h2>Recognition</h2>
-    </header>
-  </section>
-  <!-- end Recognition -->
-  {% endif %}
-
-  {% if site.resume_section_associations %}
-  <!-- begin Associations -->
-  <section class="content-section">
-    <header class="section-header">
-      <h2>Associations</h2>
-    </header>
-  </section>
-  <!-- end Associations -->
-  {% endif %}
-
-  {% if site.resume_section_links %}
-  <!-- begin Links -->
-  <section class="content-section">
-    <header class="section-header">
-      <h2>Additional Links</h2>
-    </header>
-  </section>
-  <!-- end Links -->
-  {% endif %}
-
-  <footer class="page-footer">
-    <p class="footer-line">Fork me on <a href="https://github.com/gautierdelorme/gautierdelorme.github.io">GitHub</a>.</p>
-  </footer>
+    <footer class="page-footer">
+        <p class="footer-line">Fork me on <a
+                href="https://github.com/gautierdelorme/gautierdelorme.github.io">GitHub</a>.</p>
+    </footer>
 
 </div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>

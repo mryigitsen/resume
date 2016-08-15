@@ -1,8 +1,4 @@
-# [gautierdelorme.com](http://gautierdelorme.com/)
-
-*A Jekyll + GitHub Pages powered resume based on Joel Glovier's work.*
-
-![img](images/screenshot.png)
+# [leoheo.github.io](https://leoheo.github.io/)
 
 ## Docs
 
@@ -11,8 +7,9 @@
 To test locally, run the following in your terminal:
 
 1. Clone repo locally
-2. run `jekyll serve`
-3. Open your browser to `localhost:4000`
+2. `bundle install`
+3. `bundle exec jekyll serve`
+3. Open your browser to localhost:4000
 
 ### Customizing
 
