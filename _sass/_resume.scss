@@ -84,6 +84,10 @@
   }
 
   .executive-summary {
+    word-break: normal;
+    a {
+      color: #4078c0;
+    }
     @include media_larger_than_mobile { font-size: 1.125rem; }
   }
 }
@@ -206,9 +210,6 @@ a {
         border-bottom: none;
         color: #9c9c9c;
       }
-    }
-    li {
-      word-break: normal;
     }
   }
 
