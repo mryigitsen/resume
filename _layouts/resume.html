@@ -48,7 +48,12 @@ layout: default
                 <h4 class="resume-item-details"><i class="fa"></i>FrontEnd</h4>
                 <ul class="resume-item-list">
                     <li>HTML</li>
-                    <li>CSS</li>
+                    <li>
+                        CSS
+                        <ul class="resume-item-list">
+                            <li>Bootstrap</li>
+                        </ul>
+                    </li>
                     <li>
                         JavaScript
                         <ul class="resume-item-list">
@@ -84,8 +89,11 @@ layout: default
                 <h4 class="resume-item-details"><i class="fa"></i>Others</h4>
                 <ul class="resume-item-list">
                     <li>Ubuntu</li>
-                    <li>Git/Github</li>
+                    <li>git/git-flow</li>
+                    <li>github</li>
                     <li>SVN</li>
+                    <li>travis</li>
+                    <li>slack</li>
                 </ul>
             </div>
         </div>
@@ -124,15 +132,24 @@ layout: default
                 <li>
                     사용된 기술
                     <ul class="resume-item-list">
-                        <li>
-                            Python, Django, Django-REST-FrameWork, django-rest-framwwork-jwt
-                        </li>
-                        <li>
-                            gunicorn, Nginx, AWS(S3, CloudFront, Route53)
-                        </li>
+                        <li>Python, Django, Django-REST-frameWork, django-rest-framwwork-jwt</li>
+                        <li>gunicorn, Nginx, honcho, AWS(S3, CloudFront, Route53)</li>
+                        <li>Bootstrap, JQuery, d3.js, list.js</li>
+                        <li>Travis, Sentry + slack CI</li>
+                        <li>git, git-flow</li>
                     </ul>
                 </li>
-                <li>담당업무: API 구현 및 AWS Infra 구축 및 Resume 구현</li>
+                <li>
+                    담당업무: API 구현 및 AWS Infra 구축 및 Resume Page 구현
+                    <ul class="resume-item-list">
+                        <li>OAuth 구현</li>
+                        <li>Client와 JWT 통신</li>
+                        <li>SSL letsencrypt 세팅</li>
+                        <li>Slack을 활용한 Travis, Sentry CI구축</li>
+                        <li>API 입력, 업데이트시 AWS S3 자동 업로드</li>
+                        <li>django-pipeline를 활용한 Static Files AWS CloudFront Serving</li>
+                    </ul>
+                </li>
             </ul>
             <div class="columns well">
                 <div class="table-column">
@@ -168,6 +185,26 @@ layout: default
                     </a>
                 </div>
             </div>
+            <div class="columns well">
+                <div class="table-column">
+                    <a href="images/portfolio/Hoomi/app-login.png">
+                        <img class="img-thumbnail" src="images/portfolio/Hoomi/app-login.png"
+                             data-large-src="images/portfolio/Hoomi/app-login.png" alt="app-login"/>
+                    </a>
+                </div>
+                <div class="table-column">
+                    <a href="images/portfolio/Hoomi/app-list.png">
+                        <img class="img-thumbnail" src="images/portfolio/Hoomi/app-list.png"
+                             data-large-src="images/portfolio/Hoomi/app-list.png" alt="app-list"/>
+                    </a>
+                </div>
+                <div class="table-column">
+                    <a href="images/portfolio/Hoomi/app-detail.png">
+                        <img class="img-thumbnail" src="images/portfolio/Hoomi/app-detail.png"
+                             data-large-src="images/portfolio/Hoomi/app-detail.png" alt="app-detail"/>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="resume-item">
@@ -178,12 +215,16 @@ layout: default
             <ul class="resume-item-list">
                 <li>참여인원: 8명 </li>
                 <li>목적: Web 환경에서의 물류 포워딩 시스템 개발로 기존에 출시돼있는 프로그램들보다 사용자 편의성 증가 설치 불필요</li>
-                <li>사용된 기술: Java, Jquery, Spring, MyBatis, ExtJS, SQL, JDBC</li>
-                <li>개발환경: Java 1.8, Spring 4.1, ExtJS 5.1, Tomcat 8, AWS(Amazon Web Service), RDS(MS-SQL 2012 Web Version)</li>
+                <li>사용된 기술
+                    <ul class="resume-item-list">
+                        <li>Java, Jquery, Spring, MyBatis, ExtJS, AWS RDS(MS-SQL), JDBC</li>
+                        <li>SVN, Apache Tomcat</li>
+                    </ul>
+                </li>
                 <li>담당업무: PDF Print Module 개발 및 ExtJS FrontEnd 구현</li>
                 <ul class="resume-item-list">
-                    <li> ExtJS Grid Plugin Open Source Filterbar(https://github.com/loiane/Ext.ux.grid.FilterBar.git)</li>
-                    <li> Jasper Report library 사용 PDF Generate Java Module 개발</li>
+                    <li>ExtJS Grid Plugin Open Source Filterbar 사용</li>
+                    <li>Jasper Report library 사용 PDF Generate Java Module 개발</li>
                 </ul>
             </ul>
             <div class="columns well">
@@ -224,11 +265,16 @@ layout: default
                         <li>추후 HRIS 프로젝트 수주</li>
                     </ul>
                 </li>
-                <li>사용된 기술: Java, Jquery, Spring, IBatis, ExtJS, SQL, JDBC, iText, poi, Google Guava Library</li>
+                <li>사용된 기술
+                    <ul class="resume-item-list">
+                        <li>Java, Jquery, Spring, IBatis, ExtJS, MS-SQL, JDBC, iText, poi, Google Guava Library</li>
+                        <li>SVN, Apache Tomcat</li>
+                    </ul>
+                </li>
                 <li>담당업무: 인사, 휴가, 퇴직금 Module 개발</li>
                 <ul class="resume-item-list">
                     <li>iText library사용 인사기록카드 PDF 출력 개발</li>
-                    <li>V2.5에 없는 관리자 휴가조회 개</li>
+                    <li>V2.5에 없는 관리자 휴가조회 개발</li>
                     <li>퇴직소득계산 Java Reflection 사용 Client마다 퇴직금 로직 다른거 대처</li>
                 </ul>
             </ul>
