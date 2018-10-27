@@ -2,34 +2,29 @@
 - company: Robert College Makers Club
   position: Co-President
   duration: Nov, 2015 &mdash; Present
-  summary: Restructured the Makers club, Various projects were created using the principles learned from self-study. Created new social identity for club
-  
-- company: Robert College Maker Faire
-  position: Organizer
-  duration:  Nov, 2015 &mdash; Present
-  summary: Organizing the biggest School Maker Faire in Turkey.
-
-- company: Robert College ROV Team
-  position: Front Desk Attendant
-  duration:   Sep, 2017  &mdash; Present
-  summary: In charge of a young team working towards MATE ROV competition. Various projects were created using the principles learned from self-study.
-
-- company: Robert College Ushers' Corp
-  position: Co-Founder, President
-  duration:   Sep, 2016  &mdash; Present
-  summary: Developing a ticketing system for the Theater events based on RFID ID Cards issued by the school. Counts both as a club and a Community Involvement Project.
+  summary: Restructured the Makers club, Various projects were created using the principles learned from self-study. Created new social identity for club.
 
 - company: Robert College ROV Team
   position: Co-Founder, President
   duration:   Sep, 2017  &mdash; Present
   summary: In charge of a young team working towards MATE ROV competition. Various projects were created using the principles learned from self-study.
 
-- company: Robert College Student Tech Crew
-  position: Front Desk Attendant
-  duration:   Sep, 2015  &mdash; Present
-  summary: In charge of a young team working towards MATE ROV competition. Various projects were created using the principles learned from self-study.
+- company: Robert College RoboMaster Team
+  position: Team Captain & Low-Level Programming
+  duration:   Jan, 2018  &mdash; Present
+  summary: Leading the only High School Team attending IEEE ICRA's Robot Challenges: 2018 in Brisbane, AU, and 2019 (Hopefully) in Montreal, CA.
+
+- company: Robert College Shell Eco-Marathon Team
+  position: Co-Founder
+  duration:   Dec, 2017  &mdash; Present
+  summary: Working towards the Shell Eco-Marathon Competition
 
 - company: Sabanci University Summer Program for High School Students
   position: Assistantship
   duration:   Jul, 2016 
   summary: Research work over Finite State Machines.
+
+- company: Technical University of Munich
+  position: Internship
+  duration:   Jan, 2018 ; Jul, 2018 
+  summary: Research over telepresence with robotics & VR; developed a system to interract with KUKA Manipulators via VR Headsets. 
