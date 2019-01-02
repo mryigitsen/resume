@@ -1,20 +1,11 @@
-# Skills
-# Donut design
 - skill: Computer Programming
   description: Python & C (Advanced) , HTML & JS (Intermediate)
-  
-# Craft beer brewing
 - skill: Design
   description: Autodesk Fusion 360 (Intermediate), Solidworks (Basic)
-  
-# Family leadership
 - skill: Creative Software
   description: Adobe Photoshop CS6 (Advanced), Adobe Premier CS6 (Advanced),  iMovie (Advanced), Adobe Audition (Basic), 
-
-# Family leadership
 - skill: Developer Tools
   description: Axure RP 8 (Rapid Prototyping) (Intermediate), Adobe Dreamweaver (Basic) # Family leadership
-  
 - skill: Robot Operating System (ROS)   
 - skill: PCB Design
 - skill: Foreign Languages
