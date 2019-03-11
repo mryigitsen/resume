@@ -1,18 +1,17 @@
 # Jobs
 - company: Robert College Makers Club
+  position: President
+  duration: March, 2019 &mdash; Present
+  position: Head of RoboMaster Team, Member of Admin Team
+  duration: Dec, 2018 &mdash; Present
   position: Co-President
-  duration: Nov, 2015 &mdash; Present
-  summary: Restructured the Makers club, Various projects were created using the principles learned from self-study. Created new social identity for club.
-
-- company: Robert College ROV Team
-  position: Co-Founder, President
-  duration:   Sep, 2017  &mdash; Present
-  summary: In charge of a young team working towards MATE ROV competition. Various projects were created using the principles learned from self-study.
+  duration: Nov, 2015 &mdash; Dec 2017.
+  summary: Restructured the Makers club, opened up Finance & PR, ROV (Underwater Robotics) Team and merged with the already existing RoboMaster Team. Created new social identity for club.
 
 - company: Robert College RoboMaster Team
   position: Team Captain & Low-Level Programming
   duration:   Jan, 2018  &mdash; Present
-  summary: Leading the only High School Team attending IEEE ICRA's Robot Challenges 2018 in Brisbane, AU, and 2019 (Hopefully) in Montreal, CA.
+  summary: Leading the only High School Team attending IEEE ICRA's Robot Challenges 2018 in Brisbane, AU.
 
 - company: Sabanci University Summer Program for High School Students
   position: Assistantship
