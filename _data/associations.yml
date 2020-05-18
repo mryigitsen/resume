@@ -1,5 +1,27 @@
 # Associations
 # comment out the urls if you do not wish to display them
+  - organization: FIRST Robotics Competition
+  role: Volunteer
+  year: 2019 &mdash; Present
+  url: http://www.firstinspires.com
+  summary: Volunteering for Turkish Regional Competitions. Bosphorus'19: Official Scorer, Bosphorus & Istanbul'20: Inspector, Event Horizon Off-Season: Head Referee
+- organization: FRC Team ARC#6014
+  role: Computer Vision Programmer
+  year: 2019 &mdash; 2020
+  url: http://arc6014.com
+  summary: Programmed (but never implemented due to COVID-19) the team's 2020 CV solution for the game Infinite Recharge.
+
+- organization: Robert College Makers Club
+  role: President
+  year: 2015 &mdash; 2020
+  url: http://www.rcmakers.com
+  summary: In charge of directing the biggest School Maker Faire in Turkey, also captaining the ROV and DJI Robomasters AI Challenge subteams. ROV Team: Participate in MATE ROV, Roboik and Pres. of Defence Industry ROV competitions, 2nd in MATE Turkey Regionals. DJI RoboMaster: Only high school team allowed to compete in the AI Challenge, finalist in 2018, finals in ICRA conference annually.
+
+- organization: RC Junior Achievement Club
+  role: Chief Technical Officer
+  year: 2018 &mdash; 2020
+  url: http://ja-rc.org
+  summary: Implemented the first in-house conference registration system, assisted the product design group.
 
 - organization: Student Tech Crew
   role: Member until 2018, Level Leader since 2018
@@ -19,8 +41,3 @@
   #url: http://snwlu.org
   summary: Served as the stage manager for in-house events such as musicals and theater shows. 
   
-- organization: Robert College Makers Club
-  role: Organizer
-  year: 2015 &mdash; 2020
-  url: http://www.rcmakers.com
-  summary: Organizing the first School Maker Faire in Turkey for 2 years.
