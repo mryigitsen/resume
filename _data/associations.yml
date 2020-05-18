@@ -1,6 +1,6 @@
 # Associations
-# comment out the urls if you do not wish to display them
-  - organization: FIRST Robotics Competition
+# comment out the urls if you do not wish to display the
+- organization: FIRST Robotics Competition
   role: Volunteer
   year: 2019 &mdash; Present
   url: http://www.firstinspires.com
