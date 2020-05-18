@@ -3,19 +3,24 @@
 
 - organization: Student Tech Crew
   role: Member until 2018, Level Leader since 2018
-  year: 2015 &mdash; Present
+  year: 2015 &mdash; 2020
   #url: http://beerfortheworld.com
   summary: In-house technology assistance crew dealing with classroom technical emergencies and developing projects for the RC Community.
 
-
 - organization: RC Ushers Corp.
   role: Head Usher
-  year: 2016 &mdash; Present
+  year: 2016 &mdash; 2020
   #url: http://snwlu.org
   summary: Founder of a Community Involvement Project with the focus of RC Community, allowing the community to taste a better experience during events.
 
-- organization: Robert College Maker Faire
+- organization: RC Backstage Crew
+  role: Stage Manager
+  year: 2015 &mdash; 2020
+  #url: http://snwlu.org
+  summary: Served as the stage manager for in-house events such as musicals and theater shows. 
+  
+- organization: Robert College Makers Club
   role: Organizer
-  year: 2015 &mdash; 2017
+  year: 2015 &mdash; 2020
   url: http://www.rcmakers.com
   summary: Organizing the first School Maker Faire in Turkey for 2 years.
