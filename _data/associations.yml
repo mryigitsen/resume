@@ -1,8 +1,15 @@
 # Associations
 # comment out the urls if you do not wish to display the
+
+- organization: HKUST RoboMaster Team Enterprize
+  role: Software Developer
+  year: 2020 &mdash; 2021
+  #url: http://www.firstinspires.com
+  summary: "Worked in the autonomous robot subteam"
+
 - organization: FIRST Robotics Competition
   role: Volunteer
-  year: 2019 &mdash; Present
+  year: 2019 &mdash; 2020
   url: http://www.firstinspires.com
   summary: "Volunteering for Turkish Regional Competitions. Bosphorus'19: Official Scorer, Bosphorus & Istanbul'20: Inspector, Event Horizon Off-Season: Head Referee"
 - organization: FRC Team ARC#6014
